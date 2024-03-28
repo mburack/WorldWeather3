@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Ensure the rest of the app has a light, white background -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- Customize the action bar to use white background -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Status bar color (Android 5.0+) -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+        <!-- Navigation bar color (Android 8.0+) -->
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+
+    <!-- ActionBar style -->
+    <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@android:color/white</item>
+        <item name="titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- ActionBar Title Text Style -->
+    <style name="MyActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>
